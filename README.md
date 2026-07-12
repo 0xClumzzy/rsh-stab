@@ -4,6 +4,9 @@
 upgrade, and SIGWINCH forwarding.  Single Rust binary, zero runtime dependencies.
 
 ```bash
+# install with one command
+curl -sSL https://raw.githubusercontent.com/0xClumzzy/rsh-stab/main/install.sh | bash
+
 # basic listener
 rsh-stab 4444
 
@@ -46,14 +49,15 @@ annoying `python3 -c 'import pty…'` ⇢ `Ctrl+Z` ⇢ `stty raw -echo` ⇢ `fg`
 ## Install
 
 ```bash
-# from source
+# one‑liner (prebuilt binary or falls back to cargo)
+curl -sSL https://raw.githubusercontent.com/0xClumzzy/rsh-stab/main/install.sh | bash
+
+# from source (requires Rust)
 git clone https://github.com/0xClumzzy/rsh-stab.git
 cd rsh-stab
 cargo build --release
 strip target/release/rsh-stab
 cp target/release/rsh-stab /usr/local/bin/
-
-# or grab a pre‑built release from the Releases page
 ```
 
 ---
