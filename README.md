@@ -5,7 +5,7 @@ upgrade, and SIGWINCH forwarding.  Single Rust binary, zero runtime dependencies
 
 ```bash
 # install with one command
-curl -sSL https://raw.githubusercontent.com/0xClumzzy/rsh-stab/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/0xClumzzy/rsh-stab/master/install.sh | bash
 
 # basic listener
 rsh-stab 4444
@@ -50,7 +50,7 @@ annoying `python3 -c 'import pty…'` ⇢ `Ctrl+Z` ⇢ `stty raw -echo` ⇢ `fg`
 
 ```bash
 # one‑liner (prebuilt binary or falls back to cargo)
-curl -sSL https://raw.githubusercontent.com/0xClumzzy/rsh-stab/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/0xClumzzy/rsh-stab/master/install.sh | bash
 
 # from source (requires Rust)
 git clone https://github.com/0xClumzzy/rsh-stab.git
